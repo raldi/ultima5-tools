@@ -43,13 +43,18 @@ fixes = (
 
 # Mario in Yew has some of his text cut off if you ask about his minor crime.
 ('TOWNE.TLK', 0x3634, (0x00, 0xA2, 0x8D, 0x8D, 0x83),
-                      (0xA2, 0x8D, 0xA0, 0x8D, 0x8F,))
+                      (0xA2, 0x8D, 0xA0, 0x8D, 0x8F,)),
+
+# Thrud is supposed to give you a Jeweled Sword and Jeweled Shield, but someone
+# accidentally typed 28 when they meant to type 0x28 so you get a mundane
+# crossbow instead.
+('KEEP.TLK', 0x12a9, (28,), (0x28,))
 )
 
 sums = {
   'CASTLE.TLK':   'fde54ae7c8852cf52eae3312615997d3',
   'DWELLING.TLK': '28c5669eccccea184c66a488c854fbd5',
-  # 'KEEP.TLK':     'e4fa8962d36a88c81d8cc09dcce82a46',
+  'KEEP.TLK':     'e4fa8962d36a88c81d8cc09dcce82a46',
   'TOWNE.TLK':    '325f55a2f0b533ca53851296d538a1a6'
 }
 
